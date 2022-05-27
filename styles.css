@@ -3,9 +3,12 @@
 *::before,
 body {
   box-sizing: border-box;
-  font-family: Roboto, Arial, sans-serif;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: Roboto, Arial, sans-serif;
 }
 
 img {
@@ -22,14 +25,33 @@ img {
 
 .arrow {
   position: absolute;
-  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 35%;
   width: 30px;
   height: 70px;
-  border-top-right-radius: 100%;
-  border-bottom-right-radius: 100%;
   background-color: rgba(230, 230, 230, 0.9);
   border: 1px solid rgb(230, 230, 230);
+  transition: 0.1s linear;
+}
+
+.arrow:hover {
+  transform: scale(1.1);
+}
+
+.left-arrow {
+  left: 0;
+  border-radius: 0 100px 100px 0;
+}
+
+.right-arrow {
+  right: 0;
+  border-radius: 100px 0 0 100px;
+}
+
+.angle-icon {
+  font-size: 30px;
 }
 
 .item {
