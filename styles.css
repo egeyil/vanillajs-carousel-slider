@@ -13,9 +13,23 @@ img {
 }
 
 .slider-container {
+  position: relative;
   display: flex;
   gap: 18px;
+  padding: 0 15px;
   overflow: hidden;
+}
+
+.arrow {
+  position: absolute;
+  left: 0;
+  top: 35%;
+  width: 30px;
+  height: 70px;
+  border-top-right-radius: 100%;
+  border-bottom-right-radius: 100%;
+  background-color: rgba(230, 230, 230, 0.9);
+  border: 1px solid rgb(230, 230, 230);
 }
 
 .item {
@@ -52,8 +66,8 @@ img {
 }
 
 .price {
-  font-size: 25px;
-  margin-left: 11px;
+  font-size: 22px;
+  margin-left: 10px;
 }
 
 .buy-button {
