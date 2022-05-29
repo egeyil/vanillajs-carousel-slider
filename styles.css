@@ -37,7 +37,6 @@ img {
 .slider {
   display: flex;
   width: 100%;
-  --items-per-screen: 4;
   --slider-index: 0;
   flex-grow: 1;
   transform: translateX(calc(var(--slider-index) * -100%));
@@ -49,7 +48,6 @@ img {
   margin: 0.5rem;
   border-radius: 4px;
   border: 1px solid rgba(221, 221, 221, 0.698);
-  max-width: 22%;
   padding: 10px 15px;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
   background-color: rgb(252, 252, 252);
